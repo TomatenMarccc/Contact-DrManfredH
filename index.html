@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privatpraxis für Gynäkologie von PD Dr. med. habil. Manfred Hofmann. Terminvereinbarung per Telefon oder E-Mail.">
+<title>Privatpraxis für Gynäkologie – PD Dr. med. habil. Manfred Hofmann</title>
+<style>
+  :root { --tinte: #111; --grau: #666; --linie: #e2e2e2; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: #fff; color: var(--tinte); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  img { display: block; width: 100%; max-width: 480px; margin: 0 auto; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: top; }
+  .inhalt { padding: 32px 24px 48px; max-width: 480px; margin: 0 auto; text-align: center; }
+  .praxis { font-size: 15px; color: var(--grau); }
+  h1 { text-wrap: balance; font-size: 26px; line-height: 1.25; font-weight: 600; letter-spacing: -0.01em; margin: 4px 0 24px; }
+  .text { margin-bottom: 32px; }
+  .text strong { font-weight: 600; }
+  h2 { font-size: 15px; font-weight: 400; color: var(--grau); margin-bottom: 4px; }
+  .zeile { display: flex; align-items: center; justify-content: center; gap: 12px; border-top: 1px solid var(--linie); }
+  .zeile:last-child { border-bottom: 1px solid var(--linie); }
+  .zeile a { min-width: 0; padding: 16px 0; color: inherit; font-weight: 600; text-decoration: none; overflow-wrap: anywhere; }
+  button { font: inherit; font-size: 15px; color: var(--grau); background: none; border: 0; padding: 12px 0 12px 12px; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  footer { margin-top: 32px; font-size: 14px; color: var(--grau); }
+  footer a { color: inherit; text-underline-offset: 3px; }
+  footer button { font-size: inherit; padding: 0; line-height: inherit; color: inherit; }
+  dialog { margin: auto; width: calc(100% - 32px); max-width: 420px; padding: 24px; border: 0; border-radius: 8px; color: var(--tinte); }
+  dialog::backdrop { background: rgba(0, 0, 0, 0.5); }
+  dialog h2 { font-size: 19px; font-weight: 600; color: var(--tinte); margin-bottom: 8px; }
+  dialog p { font-size: 16px; line-height: 1.5; margin-bottom: 20px; }
+  dialog a { color: inherit; text-underline-offset: 3px; }
+  dialog button { display: block; width: 100%; padding: 14px; border-radius: 8px; background: var(--tinte); color: #fff; font-size: 17px; font-weight: 600; text-decoration: none; }
+  dialog button + button { margin-top: 8px; }
+  dialog button.dezent { background: none; color: var(--grau); font-size: 15px; font-weight: 400; padding: 12px; text-decoration: underline; }
+  .option { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 16px; font-size: 15px; line-height: 1.45; }
+  .option input { flex: none; width: 20px; height: 20px; margin-top: 1px; accent-color: var(--tinte); }
+  .option strong { display: block; font-weight: 600; font-size: 16px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--tinte); outline-offset: 2px; }
+  @media (min-width: 1024px) {
+    body { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; }
+    img { max-width: none; height: 100vh; aspect-ratio: auto; position: sticky; top: 0; }
+    .inhalt { align-self: center; margin: 0; padding: 48px 64px; text-align: left; }
+    .zeile { justify-content: space-between; }
+    .zeile a { flex: 1; }
+  }
+</style>
+</head>
+<body>
+<img src="portrait.jpg" alt="Porträt von Dr. Manfred Hofmann" width="991" height="1000">
+<main class="inhalt">
+  <p class="praxis">Privatpraxis für Gynäkologie</p>
+  <h1>PD Dr. med. habil. Manfred Hofmann</h1>
+  <div class="text">
+    <p><strong>Herzlich willkommen.</strong></p>
+    <p>Nach meiner Tätigkeit als Chefarzt am Marienhospital werde ich in meiner Privatpraxis für Sie da sein. Ich freue mich sehr über Ihr Vertrauen und darauf, Sie auch weiterhin persönlich betreuen zu dürfen.</p>
+  </div>
+  <h2>Terminvereinbarung</h2>
+  <div>
+    <div class="zeile">
+      <a href="tel:+4915126946730">0151 26946730</a>
+    </div>
+    <div class="zeile">
+      <a href="mailto:kontakt@drhofmann.info">kontakt@drhofmann.info</a>
+    </div>
+  </div>
+  <footer><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <button type="button" id="hinweis-oeffnen">Datenschutz-Einstellungen</button></footer>
+</main>
+<dialog id="hinweis" aria-labelledby="hinweis-titel">
+  <h2 id="hinweis-titel">Datenschutz und Cookies</h2>
+  <div id="ansicht-start">
+    <p>Diese Website verwendet keine Cookies und kein Tracking. Sie können wählen, ob Ihr Browser Ihre Auswahl für spätere Besuche speichern darf. Einzelheiten finden Sie in der <a href="datenschutz.html">Datenschutzerklärung</a> und im <a href="impressum.html">Impressum</a>.</p>
+    <button type="button" id="hinweis-akzeptieren" autofocus>Akzeptieren</button>
+    <button type="button" id="hinweis-ablehnen">Ablehnen</button>
+    <button type="button" class="dezent" id="hinweis-bearbeiten">Einstellungen bearbeiten</button>
+  </div>
+  <div id="ansicht-einstellungen" hidden>
+    <label class="option">
+      <input type="checkbox" checked disabled>
+      <span><strong>Technisch notwendig</strong>Der Hosting-Anbieter verarbeitet beim Aufruf technisch notwendige Daten. Ohne sie lässt sich die Seite nicht anzeigen, daher immer aktiv.</span>
+    </label>
+    <label class="option">
+      <input type="checkbox" id="hinweis-merken">
+      <span><strong>Auswahl merken</strong>Speichert Ihre Auswahl in Ihrem Browser, damit dieser Hinweis beim nächsten Besuch nicht erneut erscheint.</span>
+    </label>
+    <label class="option">
+      <input type="checkbox" disabled>
+      <span><strong>Cookies und Tracking</strong>Werden auf dieser Website nicht verwendet.</span>
+    </label>
+    <button type="button" id="hinweis-speichern">Auswahl speichern</button>
+    <button type="button" class="dezent" id="hinweis-zurueck">Zurück</button>
+  </div>
+</dialog>
+<script>
+
+var hinweis = document.getElementById('hinweis');
+var start = document.getElementById('ansicht-start');
+var einstellungen = document.getElementById('ansicht-einstellungen');
+var merken = document.getElementById('hinweis-merken');
+var schluessel = 'datenschutz-auswahl';
+var entschieden = false;
+var gemerkt = false;
+try {
+  gemerkt = localStorage.getItem(schluessel) === '1';
+  entschieden = gemerkt || sessionStorage.getItem(schluessel) === '1';
+} catch (e) {}
+function ansicht(bearbeiten) {
+  start.hidden = bearbeiten;
+  einstellungen.hidden = !bearbeiten;
+}
+function auswahl(dauerhaft) {
+  entschieden = true;
+  gemerkt = dauerhaft;
+  try {
+    if (dauerhaft) {
+      localStorage.setItem(schluessel, '1');
+      sessionStorage.removeItem(schluessel);
+    } else {
+      localStorage.removeItem(schluessel);
+      sessionStorage.setItem(schluessel, '1');
+    }
+  } catch (e) {}
+  hinweis.close();
+}
+function oeffnen() {
+  merken.checked = gemerkt;
+  ansicht(false);
+  hinweis.showModal();
+}
+hinweis.addEventListener('cancel', function (e) {
+  if (!entschieden) e.preventDefault();
+});
+hinweis.addEventListener('close', function () {
+  if (!entschieden) hinweis.showModal();
+});
+document.getElementById('hinweis-akzeptieren').addEventListener('click', function () { auswahl(true); });
+document.getElementById('hinweis-ablehnen').addEventListener('click', function () { auswahl(false); });
+document.getElementById('hinweis-speichern').addEventListener('click', function () { auswahl(merken.checked); });
+document.getElementById('hinweis-bearbeiten').addEventListener('click', function () { ansicht(true); });
+document.getElementById('hinweis-zurueck').addEventListener('click', function () { ansicht(false); });
+document.getElementById('hinweis-oeffnen').addEventListener('click', oeffnen);
+if (!entschieden) oeffnen();
+</script>
+</body>
+</html>
